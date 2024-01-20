@@ -28,7 +28,7 @@ Names[2] = "Maheet"
 print( Names , id(Names[2])) #['Akii', 'Himmi', 'Maheet'] 140585040881648 id same before and after hence mutablity 
 #Structure also similar to array 
 Names2 = ("Akii", "Himmi" , "Bruce")
-print(id(Names(2)))
+print(id(Names(2)))  #'list' object is not callable
 # Names2(2) = "Mohit"  #Error: tuple' object does not support item assignment
  
 Print(Names2 , id(Names2(2)))
@@ -58,3 +58,26 @@ original_integer = 99  # Modifying the value creates a new integer object with v
 #  mutable data structures like lists or arrays might be more appropriate.
 #  However, it's essential to balance these considerations with the design goals and requirements of your specific application. 
 
+numbers = [1,2,3,4,5]
+sum = 0    # No memory wastage as value is not overwritten beacause INTERNING if there was a bigger value then it would have wasted memory
+for num in numbers :
+    sum +=num  
+print(sum)
+  # In Python, integers are immutable objects, meaning their values cannot be changed after creation.
+# The operation sum_result += num seems like it modifies the existing integer object, but it actually
+# creates a new integer object with the updated value and makes the variable refer to this new object.
+
+# Python optimizes the process for small integers (typically -5 to 256) using "interning."
+# Small integers are interned, meaning there is a single object for each distinct small integer value,
+# and all variables referring to that value point to the same object in memory.
+
+# Interning helps reduce memory usage and makes integer operations more efficient, as it avoids
+# unnecessary creation of new objects for frequently used small integer values.
+
+# Therefore, when using += with small integers, Python may reuse the existing interned object,
+# making it appear as if the integer is being modified in place and contributing to efficient memory usage.
+
+
+
+  
+    

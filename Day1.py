@@ -143,4 +143,11 @@ messages.extend(map(message , names))
 print(messages)   #[['hey Himmi', 'hey Akii', 'hey Bruce'], 'hey Himmi', 'hey Akii', 'hey Bruce'] 
 #messages[0] = ['hey Himmi', 'hey Akii', 'hey Bruce'] beacuse list() creates a new empty list and stores all values returned by map 
 
-    
+numbrs = [1,2,3,4,5]
+def square(nums):
+    return nums*nums
+output =[]
+# output.append((map( square,numbrs))  using the map function, but you are not converting the result to a list after applying the square function. The map function returns a map object, and you need to convert it to a list
+output.append(list(map( square,numbrs)))  
+output.extend(map(square, numbrs)) 
+print(output) #[[1, 4, 9, 16, 25], 1, 4, 9, 16, 25]   

@@ -122,10 +122,11 @@ numbrs = [1,2,3,4,5]
 def square(nums):
     return nums*nums
 output =[]
-# output.append((map( square,numbrs))  using the map function, but you are not converting the result to a list after applying the square function. The map function returns a map object, and you need to convert it to a list
-output.append(list(map( square,numbrs)))
-print(output)
-
+# output.append((map( square,numbrs))  
+output.append(list(map( square,numbrs))) 
+print(output[0]) #[1, 4, 9, 16, 25] as list() was made to store all map objects and that list got appended to output list
+#append is generally good when working with for loops 
+#The append() method is often used in conjunction with loops, especially for loops, when you want to build up a list by adding elements iteratively. When you are looping through a sequence or performing some operation multiple times, you can use append() to add elements to the end of a list during each iteration.
 
 #concatenate using MAP()
 greet = "hey"
@@ -147,7 +148,20 @@ numbrs = [1,2,3,4,5]
 def square(nums):
     return nums*nums
 output =[]
-# output.append((map( square,numbrs))  using the map function, but you are not converting the result to a list after applying the square function. The map function returns a map object, and you need to convert it to a list
+# output.append((map( square,numbrs)) 
+# using the map function, but you are not converting the result to a list after applying the square function. The map function returns a map object, and you need to convert it to a list
+# Map Object:
+
+# Lazily evaluates the values.
+# Consumes less memory as it generates values on demand.
+# Does not support random access (you can't access elements by index).
+# Once iterated, it's over, it cannot be reused (you need to create a new map object).
+
+# List:
+
+# Stores all values in memory.
+# Supports random access (you can access elements by index).
+# Can be iterated over multiple times.
 output.append(list(map( square,numbrs)))  
 output.extend(map(square, numbrs)) 
 print(output) #[[1, 4, 9, 16, 25], 1, 4, 9, 16, 25]   

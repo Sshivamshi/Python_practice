@@ -1,5 +1,5 @@
-
-# BUILT-IN DATA TYPES FOR PYTHON
+#press alt+Z for word wrap
+# BUILT-IN DATA TYPES FOR PYTHON 
 
 a , b = 1 , -1  #numeric data type
 print (a + b)   
@@ -88,10 +88,17 @@ print(c%d) #-21%10 is 9 because the closest multiple of 10 towards negative infi
 # Remainder is always positive 
 print(c/d) # negative quotient : -2.1
 
-#int(print(c/d)) 
+#int(print(c/d))  # but the print() function returns None.
 # The expression print(c/d) will print the result of the division of c by d,
 # but the print() function returns None.
 # you're trying to convert None to an integer and will result in a TypeError.
+
+#printing a loop in python for i=0 to i<testcases ; i++
+#int(print(c/d))  # but the print() function returns None.
+test = int(input()) #input() always return string hence type conversion
+for i in range(test): #range(n) sets range from 0 to n-1
+    print("hello")
+
 
 print(int(c/d)) # -2 Type converted to int
 e , f = 4 , 1/2   
@@ -104,7 +111,22 @@ print(e**f)  #modulus operator :
 powers = [1/2,-1/2,2,-2]
 output =[]
 for nums in powers :
-    #output[nums] nums is values inside power not index
+    #output[nums]    nums is values inside power not index
     output.append(4**nums)
 print(output) #[2.0, 0.5, 16, 0.0625]  
+
+
+#map() : similar to map() in JS , used to iterate a function over all values in a list 
+#map() is a built-in function that applies a given function to all items in an input list (or any other iterable) and returns an iterable (usually a list) of the results.
+numbrs = [1,2,3,4,5]
+def square(nums):
+    return nums*nums
+output =[]
+# output.append((map( square,numbrs))  using the map function, but you are not converting the result to a list after applying the square function. The map function returns a map object, and you need to convert it to a list
+output.append(list(map( square,numbrs)))
+print(output)
+
+
+
+
     

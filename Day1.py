@@ -3,12 +3,10 @@
 
 a , b = 1 , -1  #numeric data type
 print (a + b)   
-
 d = -5.000 #float data type
 #double quotes are the same as single quotes:
 c = 3+0j
 print(type(c))  #<class 'complex'> output
-
 # Variable names are case-sensitive.
 A , B = 2, -2 
 print(A+B)
@@ -79,5 +77,34 @@ print(sum)
 
 
 
-  
+a ,b = 10,-10
+print(a+b)
+print(a-b)
+print(a*b)
+print(a/b)  #division (leaves quotient)
+print(a%b) #modulus (leaves remainder)
+c , d = -21 , 10
+print(c%d) #-21%10 is 9 because the closest multiple of 10 towards negative infinity is -30 and -30+9 is -21. 
+# Remainder is always positive 
+print(c/d) # negative quotient : -2.1
+
+#int(print(c/d)) 
+# The expression print(c/d) will print the result of the division of c by d,
+# but the print() function returns None.
+# you're trying to convert None to an integer and will result in a TypeError.
+
+print(int(c/d)) # -2 Type converted to int
+e , f = 4 , 1/2   
+print(e**f)  #modulus operator :
+# e , f = 4 , 1/2   shortway of calculating square root 
+# (a)^1/2 mean sqaure root 
+#(a)^-1 means reciprocal 
+#(a)^-1/2 means square root of reciprocal 
+
+powers = [1/2,-1/2,2,-2]
+output =[]
+for nums in powers :
+    #output[nums] nums is values inside power not index
+    output.append(4**nums)
+print(output) #[2.0, 0.5, 16, 0.0625]  
     

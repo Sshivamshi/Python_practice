@@ -127,6 +127,20 @@ output.append(list(map( square,numbrs)))
 print(output)
 
 
+#concatenate using MAP()
+greet = "hey"
+names = ["Himmi", "Akii", "Bruce"]
+messages =[]
+#def message(greet , word): #the function that uses map can take only one argument and return one value 
+def message(word):
+        return greet + " "+ word
+#messages = messages.append(list(map(message , names)))
+#messages = messages.append(list(map(message, names))): This line is assigning the result of the append method to the variable messages. However, the append method in Python returns None because it modifies the list in-place and doesn't produce a new list. Therefore, after this line, messages will be set to None.
 
+messages.append(list(map(message , names))) 
+messages.extend(map(message , names))
+#extend function is similar to : messages = messages + list(map(message , names))
+print(messages)   #[['hey Himmi', 'hey Akii', 'hey Bruce'], 'hey Himmi', 'hey Akii', 'hey Bruce'] 
+#messages[0] = ['hey Himmi', 'hey Akii', 'hey Bruce'] beacuse list() creates a new empty list and stores all values returned by map 
 
     

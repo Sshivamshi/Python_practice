@@ -11,7 +11,7 @@ while t > 0:
 
 # https://www.codechef.com/practice/course/arrays-python/PPYAR01/problems/LARGESECOND
 
-    t = int(input())
+t = int(input())
 
 while t > 0:
     n = int(input())
@@ -65,3 +65,102 @@ while t > 0:
         print("Addy")
     else:
         print("Draw")
+
+
+# INT() , lIST() , STRING() TYPE CONVERSION  IN DETAIL
+
+
+t = input("enter a number ")  #input function takes string argument to print and returns string too 
+print(t)  #wil print string too if entered , so to sanitize input or type convert to int
+n = int(input("enter a no."))
+print(n)
+#t = input("enter a number ")
+# print(int(t))   to type convert output
+
+#enter a number 
+# hello
+# hello
+# enter a no.
+# a
+# ValueError: invalid literal for int() with base 10: 'a'
+
+#Now, if you run the program and enter non-integer values like "hello" or "a," you will get a ValueError because these values cannot be converted to integers. The error message you provided (ValueError: invalid literal for int() with base 10: 'a') indicates that the program is trying to convert the string 'a' to an integer, which is not possible.
+
+
+# int()
+# Use Case: Converts a value to an integer.
+# Argument Type: Any numeric type (int, float, etc.), or a string containing a valid integer.
+# Return Type: Integer.
+
+num_str = "42"
+num_int = int(num_str)  # Output: 42
+
+# float()
+# Use Case: Converts a value to a floating-point number.
+# Argument Type: Any numeric type, or a string containing a valid floating-point number.
+# Return Type: Float.
+
+num_int = 42
+num_float = float(num_int)  # Output: 42.0
+
+# str()
+# Use Case: Converts a value to a string.
+# Argument Type: Any type.
+# Return Type: String.
+
+num_int = 42
+num_str = str(num_int)  # Output: '42'
+
+# list()
+# Use Case: Converts an iterable (e.g., tuple, string, or another list) to a list.
+# Argument Type: Iterable.
+# Return Type: List.
+
+my_tuple = (1, 2, 3)
+my_list = list(my_tuple)  # Output: [1, 2, 3]
+
+# tuple()
+# Use Case: Converts an iterable (e.g., list, string, or another tuple) to a tuple.
+# Argument Type: Iterable.
+# Return Type: Tuple.
+
+my_list = [1, 2, 3]
+my_tuple = tuple(my_list)  # Output: (1, 2, 3)
+
+# set()
+# Use Case: Converts an iterable (e.g., list, string, or another set) to a set.
+# Argument Type: Iterable.
+# Return Type: Set.
+
+my_list = [1, 2, 3, 2]
+my_set = set(my_list)  # Output: {1, 2, 3}
+
+# bool()
+# Use Case: Converts a value to a boolean.
+# Argument Type: Any type.
+# Return Type: Boolean.
+
+num = 42
+is_true = bool(num)  # Output: True
+
+# dict()
+# Use Case: Converts an iterable of key-value pairs (e.g., a list of tuples) to a dictionary.
+# Argument Type: Iterable.
+# Return Type: Dictionary.
+
+key_value_pairs = [('a', 1), ('b', 2)]
+my_dict = dict(key_value_pairs)  # Output: {'a': 1, 'b': 2}
+
+# ord() and chr()
+# Use Case (ord()): Converts a character to its Unicode code(ASCII) point.
+# Use Case (chr()): Converts a Unicode code(ASCII) point to a character.
+# Argument Type (ord()): Character (string of length 1).
+# Argument Type (chr()): Integer.
+# Return Type (ord()): Integer.
+# Return Type (chr()): Character.
+
+char = 'A'
+unicode_code_point = ord(char)  # Output: 65
+
+code_point = 65
+character = chr(code_point)  # Output: 'A'

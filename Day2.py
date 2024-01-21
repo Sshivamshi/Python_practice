@@ -164,3 +164,38 @@ unicode_code_point = ord(char)  # Output: 65
 
 code_point = 65
 character = chr(code_point)  # Output: 'A'
+
+
+# input().split(): split() is a METHOD used if we want input on single line ,
+#  it separates/splits the input string (input() returns inputed string to split() method)  to int,float or string separated by space separated by , better than using input() 5 times with for loop 
+
+# Function:
+
+# A function in Python is a block of code that performs a specific task and can be called by its name.
+# Functions can take input parameters (arguments), perform operations, and return a result.
+# Functions can be defined using the def keyword, and they are not tied to any specific object or class.
+
+def add_numbers(a, b):
+     # This function takes two parameters, adds them, and returns the result
+    return a + b
+# Calling the function with arguments 3 and 5
+result = add_numbers(3, 5)
+# Output: 8
+print(result)
+
+# Method:
+
+# A method in Python is a function that is associated with an object and is called on that object.
+# Methods are called on objects, and they operate on the data within the object. They donot take arguments
+# Methods are accessed using the dot notation: object.method().
+# Many methods are built-in for various data types (e.g., strings, lists, dictionaries),
+# and custom classes can define their own methods.
+
+# Creating a string object
+my_string = "Hello, World!"
+# Using the upper() method on the string object
+uppercased_string = my_string.upper()
+# Output: "HELLO, WORLD!"
+print(uppercased_string)
+
+

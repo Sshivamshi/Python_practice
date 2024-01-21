@@ -1,4 +1,6 @@
 #press alt+Z for word wrap
+
+
 # BUILT-IN DATA TYPES FOR PYTHON 
 
 a , b = 1 , -1  #numeric data type
@@ -164,4 +166,13 @@ output =[]
 # Can be iterated over multiple times.
 output.append(list(map( square,numbrs)))  
 output.extend(map(square, numbrs)) 
-print(output) #[[1, 4, 9, 16, 25], 1, 4, 9, 16, 25]   
+print(output) #[[1, 4, 9, 16, 25], 1, 4, 9, 16, 25]  
+numbrs = [1,2,3,4,5]
+def square(nums):
+    return nums*nums
+output =[]
+# output.append((map( square,numbrs))  
+for i in range(5):
+    output.append((map( square,numbrs)))
+print(output)
+#[<map object at 0x7ffbd7ecb970>, <map object at 0x7ffbd7d7cd60>, <map object at 0x7ffbd7d7ccd0>, <map object at 0x7ffbd7d7cc40>, <map object at 0x7ffbd7d7cbb0>]

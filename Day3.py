@@ -38,3 +38,21 @@ while t > 0:
                 
     print(output)
     t -= 1
+
+
+# https://www.codechef.com/practice/course/arrays-go/PGOAR01/problems/RUNCOMPARE
+
+t = int(input())
+
+while t > 0:
+    n = int(input())
+    a = list(map(int, input().split()))
+    b = list(map(int, input().split()))
+    count = 0
+    
+    for i in range(n):
+        if 2*a[i] >= b[i] and 2*b[i] >= a[i]:
+            count += 1
+    print(count)
+    t -= 1
+

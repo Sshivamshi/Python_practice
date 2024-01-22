@@ -3,7 +3,7 @@
 t = int(input())  # taking input string and converting to int
 
 for i in range(t):
-    # peeps, total = map(int, input().split())  # corrected map() syntax
+    # peeps, total = map(int(), input().split())  # corrected map() syntax
     peeps, total = map(int, input().split())  # corrected map() syntax
     a = list(map(int, input().split()))
     output = []
@@ -17,3 +17,24 @@ for i in range(t):
 
     # Use str() to convert the list of integers to a string
     print("".join(map(str, output)))
+
+
+
+
+# https://www.codechef.com/practice/course/arrays-go/PGOAR01/problems/KITCHENCOST
+
+
+t = int(input())
+
+while t > 0:
+    n, x = map(int, input().split())
+    a = list(map(int, input().split()))
+    b = list(map(int, input().split()))
+    output = 0
+    # Your code goes here
+    for i in range(n):
+            if a[i] >= x:
+                output += b[i]
+                
+    print(output)
+    t -= 1

@@ -67,7 +67,7 @@ while t > 0:
         print("Draw")
 
 
-# INT() , lIST() , STRING() TYPE CONVERSION  IN DETAIL
+# TYPE CONVERSION  IN DETAIL
 
 
 t = input("enter a number ")  #input function takes string argument to print and returns string too 
@@ -186,7 +186,7 @@ print(result)
 # Method:
 
 # A method in Python is a function that is associated with an object and is called on that object.
-# Methods are called on objects, and they operate on the data within the object. They donot take arguments
+# Methods are called on objects, and they operate on the data within the object. 
 # Methods are accessed using the dot notation: object.method().
 # Many methods are built-in for various data types (e.g., strings, lists, dictionaries),
 # and custom classes can define their own methods.
@@ -197,5 +197,9 @@ my_string = "Hello, World!"
 uppercased_string = my_string.upper()
 # Output: "HELLO, WORLD!"
 print(uppercased_string)
+
+# Input: Two integers separated by a space
+a, b = map(int, input("Enter two integers separated by a space: ").split()) #
+
 
 

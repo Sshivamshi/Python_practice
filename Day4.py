@@ -26,7 +26,7 @@ for i in range(t):
     
 
 
-# 
+# https://www.codechef.com/practice/course/1-star-difficulty-problems/DIFF1200/problems/EXAMTIME
 
 t = int(input())
 for i in range(t):

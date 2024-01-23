@@ -37,6 +37,7 @@ Print(Names2 , id(Names2(2)))
 # Immutable : numeric , string , tuple  (varible name is given to loaction of memory )
 
 # In Python, everything is an object.(instance of a datatype)
+# why ? beacause if we treat data as object we can use METHODS (function inside classes , used by objects) with them like .sort() , .append() , .extend()
 #A variable is a name given to a memory location where a value is stored. 
 #  Objects are regions of memory with types and associated operations.
 # Examples of objects include numbers, strings, lists, functions, and modules.

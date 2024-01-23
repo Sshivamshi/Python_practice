@@ -14,7 +14,7 @@ for i in range(t):
     for char in word:
         if char not in 'aeiou':
             count += 1             # count++ is not a valid expression in Python
-            if count >=4 :      # IMP   if we write nested if
+            if count >=4 :      # IMP  in nested IF , its checking if count >= 4 everytime , we can use to check the count conditon(IF-ELSE) only when next vowel is encountered. if count < 4 , then count = 0 (reset)
                 break         #we are checking the adjacent characters , so breaking out of loop once 4 consonants are acquired
         else:
             count = 0     #note here the count resets once encountered a vowel , it may have had reset count even after 5 consonant is enocountered FOLLOWED BY A VOWEL if not for the above condition
@@ -24,6 +24,9 @@ for i in range(t):
     else:
         print("YES")
     
+
+
+# 
 
 t = int(input())
 for i in range(t):

@@ -51,3 +51,29 @@ print(message.find("g")) # 9
 
 message = message.replace( 'good', 'bad' ) # Bruce is badg  
 print(message)
+
+names = ["bruce", "himmi", "akki"]
+
+for name in names:
+    message = f'hey {name}'
+    print(message)  
+    print(f'hey {name}') 
+    print(f'bye {name}')
+
+''' There is a mix of tabs and spaces in this indentation, which is causing a TabError. Python requires consistent indentation, either using tabs or spaces, but not both in the same file. In your provided code, there seems to be a mix of tabs and spaces.'''
+
+names = ["bruce", "himmi", "akki"]
+
+for name in names:
+    message = f'Hey {name}'
+    print(message)
+    print(f'Bye >> {name}')   #use either tabs or spaces
+''' OUTPUT 
+Hey bruce
+Bye >> bruce
+Hey himmi
+Bye >> himmi
+Hey akki 
+'''
+
+print(help(str))   #for help regarding methods

@@ -32,3 +32,28 @@ courses.append(courses2)
 print(courses)  #   ['history', ['english', 'science'], 'ece', 'maths', 'phy', 'cse', 'INT', ['english', 'science']]
  
 # Note how append() and insert() are inserting the whole list (courses2) instead of elements of the list , inside the list courses
+
+
+courses = ["ece", "maths","phy","cse"]
+courses2 = ["english","science"]   
+
+courses.extend(courses2) # Only takes one argument
+print(courses) #['ece', 'maths', 'phy', 'cse', 'english', 'science']
+
+# Extend is good when we have multiple values to insert into a list , or join two lists by extending
+
+courses3 = ("hindi","sanskrit")  #courses 3 is a tuple
+
+courses.append(courses3)  #can append a tuple too 
+print(courses)  # ['ece', 'maths', 'phy', 'cse', 'english', 'science', ('hindi', 'sanskrit')] 
+courses2.insert(1,courses3)     #can insert a tuple too , at given location 
+print(courses2)  # ['english', ('hindi', 'sanskrit'), 'science']
+
+#note : why not? print(courses.append(courses2)) since .append() and .insert() returns void/none , it's just to operate with existing list. so  none is printed.
+print(courses.append(courses2))   # None
+print(courses.extend(courses2))   # None
+
+courses2.extend(courses3)   # can iterate and insert elements of tuple too , instead of appending/Inserting the whole tuple itself
+print(courses2)  # ['english', ('hindi', 'sanskrit'), 'science', 'hindi', 'sanskrit']
+
+

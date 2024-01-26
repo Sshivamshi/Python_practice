@@ -49,11 +49,52 @@ print(courses)  # ['ece', 'maths', 'phy', 'cse', 'english', 'science', ('hindi',
 courses2.insert(1,courses3)     #can insert a tuple too , at given location 
 print(courses2)  # ['english', ('hindi', 'sanskrit'), 'science']
 
-#note : why not? print(courses.append(courses2)) since .append() and .insert() returns void/none , it's just to operate with existing list. so  none is printed.
+#note : why not print(courses.append(courses2)) ? since .append() and .insert() returns void/none , it's just to operate with existing list. so  none is printed.
 print(courses.append(courses2))   # None
 print(courses.extend(courses2))   # None
 
-courses2.extend(courses3)   # can iterate and insert elements of tuple too , instead of appending/Inserting the whole tuple itself
+courses2.extend(courses3)   # The extend() method takes all the elements from another iterable (like list /tuple) and adds them to the end of the list. Instead of appending/Inserting the whole tuple itself
 print(courses2)  # ['english', ('hindi', 'sanskrit'), 'science', 'hindi', 'sanskrit']
+
+'''
+courses.sort() or courses2.sort
+print(courses) # Error if we put here because we cannot use sort method as all are not of same datatype , (Tuple is present in both LISTs)
+
+'''
+courses = ["ece", "maths","phy","cse"]
+courses.sort() 
+print(courses)     # ['cse', 'ece', 'maths', 'phy']
+courses.reverse()   #using reverse after sort() method , to get descending order sort
+print(courses) # ['phy', 'maths', 'ece', 'cse']
+
+
+
+
+
+def func1():
+    print("Before call of func2")
+    func2()
+    print(" Func 1 was just executed")
+    
+def func2():
+    print("Before call of func3")
+    func3()
+    print(" Func 3 was just executed")
+
+def func3():
+    print(" Final execution / Func3 execution")
+    
+func1()
+
+''' OUTPUT : (order of execution)
+
+Before call of func2
+Before call of func3
+ Final execution / Func3 execution
+ Func 3 was just executed
+ Func 1 was just executed 
+ '''
+
+
 
 

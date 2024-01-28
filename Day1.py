@@ -33,11 +33,11 @@ print(id(Names(2)))  #'list' object is not callable
  
 Print(Names2 , id(Names2(2)))
 
-# Mutable : list , dictionary
-# Immutable : numeric , string , tuple  (varible name is given to loaction of memory )
+# Mutable : list , dictionary 
+# Immutable : numeric , string , tuple  (varible name is given to loaction of memory) 
 
-# In Python, everything is an object.(instance of a datatype)
-# why ? beacause if we treat data as object we can use METHODS (function inside classes , used by objects) with them like .sort() , .append() , .extend()
+# In Python, everything is an object.(instance of a datatype) 
+# why ? beacause if we treat data as object we can use METHODS (function inside classes , used by objects) with them like .sort() , .append() , .extend() )
 #A variable is a name given to a memory location where a value is stored. 
 #  Objects are regions of memory with types and associated operations.
 # Examples of objects include numbers, strings, lists, functions, and modules.
@@ -64,6 +64,7 @@ sum = 0    # No memory wastage as value is not overwritten beacause INTERNING if
 for num in numbers :
     sum +=num  
 print(sum)
+
   # In Python, integers are immutable objects, meaning their values cannot be changed after creation.
 # The operation sum_result += num seems like it modifies the existing integer object, but it actually
 # creates a new integer object with the updated value and makes the variable refer to this new object.
@@ -177,3 +178,4 @@ for i in range(5):
     output.append((map( square,numbrs)))
 print(output)
 #[<map object at 0x7ffbd7ecb970>, <map object at 0x7ffbd7d7cd60>, <map object at 0x7ffbd7d7ccd0>, <map object at 0x7ffbd7d7cc40>, <map object at 0x7ffbd7d7cbb0>]
+

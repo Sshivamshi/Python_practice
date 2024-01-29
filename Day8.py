@@ -34,3 +34,32 @@ def factorial(N):
     print(len(s))       #print number of digits in the factorial 
     
 factorial(4)
+
+
+# https://www.codechef.com/practice/course/strings-python/PPYST01/problems/DNASTORAGE
+
+
+t = int(input())
+
+while t > 0:
+    n = int(input())
+    s = input()
+    binary = list(s)
+    st = ""
+    
+    for i in range(len(binary)):
+        if i % 2 == 0:
+            continue
+        
+        elif i % 2 == 1:
+            if binary[i] == '0' and binary[i-1] == '0':
+                st += 'A'
+            elif binary[i] == '0' and binary[i-1] == '1':
+                st += 'C'
+            elif binary[i] == '1' and binary[i-1] == '0':
+                st += 'T'
+            elif binary[i] == '1' and binary[i-1] == '1':
+                st += 'G'
+    
+    print(st)
+    t -= 1

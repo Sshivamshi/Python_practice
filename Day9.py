@@ -57,3 +57,28 @@ while t > 0:
     
     print(alice_score, bob_score)
     t -= 1
+
+
+
+
+# https://www.codechef.com/practice/course/strings-python/PPYST01/problems/HAPPYSTR
+
+t = int(input())
+
+while t > 0:
+    s = input()
+    count = 0 
+    lists = list(s)
+    for char in lists:
+        if char in 'aeiou':
+            count += 1 
+            if count > 2 :     # breaking out of loop once a substring(len > 2) is found, saves time .
+                break
+        else:
+            count = 0
+                
+    if count > 2:
+        print("happy")
+    else:
+        print("sad")
+    t -= 1

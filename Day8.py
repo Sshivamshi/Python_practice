@@ -63,3 +63,10 @@ while t > 0:
     
     print(st)
     t -= 1
+
+
+
+# https://www.codechef.com/practice/course/strings-python/PPYST01/problems/TWOSTR
+
+
+# approach : all non '?' positions should be equal

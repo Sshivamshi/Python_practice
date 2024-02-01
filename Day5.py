@@ -60,7 +60,8 @@ for name in names:
     print(f'hey {name}') 
     print(f'bye {name}')
 
-''' There is a mix of tabs and spaces in this indentation, which is causing a TabError. Python requires consistent indentation, either using tabs or spaces, but not both in the same file. In your provided code, there seems to be a mix of tabs and spaces.'''
+''' There is a mix of tabs and spaces in this indentation, which is causing a TabError.
+ Python requires consistent indentation, either using tabs or spaces, but not both in the same file. In your provided code, there seems to be a mix of tabs and spaces.'''
 
 names = ["bruce", "himmi", "akki"]
 

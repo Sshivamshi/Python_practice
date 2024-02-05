@@ -67,24 +67,25 @@ while t > 0:
         print("Draw")
 
 
+
 # TYPE CONVERSION  IN DETAIL
 
-
-t = input("enter a number ")  #input function takes string argument to print and returns string too 
-print(t)  #wil print string too if entered , so to sanitize input or type convert to int
+t = input("enter a number")  # input function takes string argument to print and returns string too 
+print(t)  # will print string too if entered, so to sanitize input or type convert to int
 n = int(input("enter a no."))
 print(n)
-#t = input("enter a number ")
+# t = input("enter a number")
 # print(int(t))   to type convert output
 
-#enter a number 
+# enter a number 
 # hello
 # hello
 # enter a no.
 # a
 # ValueError: invalid literal for int() with base 10: 'a'
 
-#Now, if you run the program and enter non-integer values like "hello" or "a," you will get a ValueError because these values cannot be converted to integers. The error message you provided (ValueError: invalid literal for int() with base 10: 'a') indicates that the program is trying to convert the string 'a' to an integer, which is not possible.
+# Now, if you run the program and enter non-integer values like "hello" or "a," you will get a ValueError 
+# because these values cannot be converted to integers. The error message you provided (ValueError: invalid literal for int() with base 10: 'a') indicates that the program is trying to convert the string 'a' to an integer, which is not possible.
 
 
 # int()

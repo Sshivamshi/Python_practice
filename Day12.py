@@ -61,3 +61,12 @@ while(t>0):
     else: 
         print('NO')
     t -= 1 
+
+# https://www.codechef.com/practice/course/1-star-difficulty-problems/DIFF1200/problems/CHEFSTUD
+
+t = int(input())
+for i in range(t):
+    s = input()
+    res = s.count('<>')
+    print(res)
+    

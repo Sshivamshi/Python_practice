@@ -70,3 +70,20 @@ for i in range(t):
     res = s.count('<>')
     print(res)
     
+# https://www.codechef.com/practice/course/1-star-difficulty-problems/DIFF1200/problems/PIZZA_BURGER
+
+t = int(input())
+for i in range(t):
+    money , y , z = map(int , input().split()) 
+    
+    if money >= y and money < z:
+        print('PIZZA')
+    elif money >= y and money >= z:
+        print('PIZZA')
+    elif money >= z and money <= y  :
+        print('BURGER')
+    else :
+        print('NOTHING')
+        
+    
+    

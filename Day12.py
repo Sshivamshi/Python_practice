@@ -46,4 +46,18 @@ while (t>0):
         
     t -=1
 
+# https://www.codechef.com/practice/course/1-star-difficulty-problems/DIFF1200/problems/AIRLINE
 
+t = int(input())
+while(t>0):
+    a , b, c , d , e =  map(int , input().split())
+    mini = min( a, b, c)
+    maxi = max(a, b, c)
+    sums = a + b + c
+    if min(a , b , c) > e  :
+        print('NO')
+    elif ( a + b <= d and c <= e) or (a + c <= d and b <= e ) or (b + c <=d and a <= e ) : 
+        print('YES')
+    else: 
+        print('NO')
+    t -= 1 

@@ -85,5 +85,28 @@ for i in range(t):
     else :
         print('NOTHING')
         
-    
+
+# https://www.codechef.com/practice/course/1-star-difficulty-problems/DIFF1200/problems/CANDY123?tab=statement
+
+
+t = int(input())
+for i in range(t):
+    counter = 1
+    lim , bob = map(int , input().split())
+    lims = 0 
+    bobs = 0 
+    while True :
+        if lims <= lim:
+            lims += counter
+            counter += 1
+        else :
+            print('Bob')
+            break
+        if bobs <= bob :
+            bobs += (counter)
+            counter += 1
+        else :
+            print('Limak')
+            break
+              
     

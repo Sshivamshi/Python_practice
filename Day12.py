@@ -108,5 +108,23 @@ for i in range(t):
         else :
             print('Limak')
             break
-              
+
+
+# https://www.codechef.com/practice/course/1-star-difficulty-problems/DIFF1200/problems/ELECTIONS
+
+# cook your dish here
+t = int(input())
+for i in range(t):
+    
+    a , b , c = map(int , input().split())
+    maxus =  max( a , b , c )
+    if max( a , b , c ) <= 50 :
+        print('NOTA')
+    elif a == maxus :
+        print('A')
+    elif b == maxus:
+        print('B')
+    else:
+        print('C')
+
     

@@ -8,3 +8,18 @@ for i in range(t):
         print(N-A)
     else :
         print(A)
+
+t = int(input())
+for i in range(t):
+    n = int(input())
+    s = input()
+    if 'Y' in s:
+        print('NOT INDIAN')
+    elif 'I' in s :
+        print('INDIAN')
+    else:
+        print('NOT SURE')
+    
+            
+        
+        

@@ -9,6 +9,9 @@ for i in range(t):
     else :
         print(A)
 
+# 
+
+
 t = int(input())
 for i in range(t):
     n = int(input())

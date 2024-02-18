@@ -39,12 +39,12 @@ print(A+B)
 # A collection of one or more characters put in single, double or triple quotes.
 Name = "Himmi" # Double quotes are the same as single quotes
 Name[0] # H Strings are almost treated like arrays but you cannot assign, modify in existing ones as it is immutable
-len(Name) # 5
-Name[-1] # i
+len(Name) # 5 (length of the string)
+Name[-1] # i  ( to access the last character in the string)
 
 
 # MUTABILITY
-# When a program is run, data objects in the program are stored in the computer’s memory for processing.
+# When a program is run, data objects ( data/values is stored as object in python) in the program are stored in the computer’s memory for processing.
 # While some of these objects can be added, removed, or modified at that memory location (mutable objects), 
 # Other data objects can’t be, once they are stored in the memory (immutable objects). 
 # The property of whether or not data objects can be added, removed, or modified in the same memory location where they are stored is called mutability.
@@ -68,7 +68,7 @@ print(id(Names(2)))  #'list' object is not callable
  
 Print(Names2 , id(Names2(2)))
 
-# In Python, everything is an object. (instance of a datatype) 
+# In Python, everything and every data/ value of variable is an object. (instance of a datatype) 
 # Why? (to stay committed to python being a OOP lang) beacause if we treat data as object we can use METHODS (function inside classes, used by objects) with them like .sort() , .append() , .extend() )
 # A variable is a name given to a memory location where a value is stored. 
 # Objects are regions of memory with types and associated operations.

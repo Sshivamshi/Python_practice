@@ -38,9 +38,9 @@ print(A+B)
 # String in python : 
 # A collection of one or more characters put in single, double or triple quotes.
 Name = "Himmi" # Double quotes are the same as single quotes
-Name[0] #H Strings are almost treated like arrays but you cannot assign, modify in existing ones as it is immutable
-len(Name) #5
-Name[-1] #i
+Name[0] # H Strings are almost treated like arrays but you cannot assign, modify in existing ones as it is immutable
+len(Name) # 5
+Name[-1] # i
 
 
 # MUTABILITY
